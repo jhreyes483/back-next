@@ -1,2 +1,8 @@
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 npx create-next-app@latest
+
+
+Lanzar el server 
+https://nextjs.org/telemetry
+url
+http://192.168.20.93:3000
