@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import React from 'react'
+
 import Sidebar from '@/components/Sidebar'
 import { Metadata } from 'next'
 
-export const metadata : Metadata = { // CO de la pagina
+export const metadata : Metadata = { // CO de la pagina "solo funciona en los server compones"
     title : 'Meeti - Inicio'
 }
 
