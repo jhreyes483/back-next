@@ -11,6 +11,7 @@ otros componentes
 type Props = {
     children: React.ReactNode
     level?: 1 | 2 | 3 | 4 | 5 | 6
+    className?: string
 }
 
 /*
@@ -19,7 +20,10 @@ export default: permite importarlo en otros archivos.
 {children}: estás desestructurando las props.
 : Props: le dices a TypeScript qué tipo de props recibe.
 */
-export default function Heading({children, level = 1} : Props){
+export default function Heading({children, level = 1, className} : Props){
+
+    const Tag: React.ElementType = `h${level}`
+
     const sizeMap : Record<number, string> = {
         1: 'text-4xl',
         2: 'text-3xl',
@@ -29,6 +33,6 @@ export default function Heading({children, level = 1} : Props){
         6: 'text-sm',
     }
     return (
-        <h1 className={(clsx("font-black upercase", sizeMap[level]))}>{children}</h1>
+        <Tag className={(clsx("font-black upercase", sizeMap[level], className))}>{children}</Tag>
     )
 }
