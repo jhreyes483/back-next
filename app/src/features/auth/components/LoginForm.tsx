@@ -1,9 +1,5 @@
 "use client"
-
-import FormGlobal from "./forms/FormGlobal"
-import FormInput from "./forms/FormInput"
-import FormLabel from "./forms/FormLabel"
-import FormSubmit from "./forms/FormSubmit"
+import {FormGlobal,FormInput, FormLabel, FormSubmit} from "./forms"
 
 export default function LoginForm(){
     return (
