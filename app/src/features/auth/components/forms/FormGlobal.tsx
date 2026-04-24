@@ -8,7 +8,7 @@ export default function FormGlobal(props: Props){
 
     const {className} = props
     return (
-        <form {...props} className = {clsx("mt-10 space-y-3 p-5 shadow-2xl", className)}
+        <form {...props} className = {clsx("mt-10 max-w-4xl space-y-5 p-8 bg-white shadow-2xl rounded-xl", className)}
         >
             {props.children}
         </form>
