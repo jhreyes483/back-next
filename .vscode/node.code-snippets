@@ -40,5 +40,25 @@
       "}"
     ],
     "description": "Crea un componente tipo page en React"
+	},
+	"Next.js RootLayout": {
+		"prefix": "rlayout",
+		"body": [
+		"export default function RootLayout({",
+		"  children,",
+		"}: Readonly<{",
+		"  children: React.ReactNode;",
+		"}>) {",
+		"  return (",
+		"    <>",
+		"      $0",
+		"    </>",
+		"  );",
+		"}"
+		],
+		"description": "Crea el RootLayout de Next.js con children tipado"
 	}
+
+
+	
 }
