@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import Sidebar from '@/components/Sidebar'
+import Sidebar from '@/src/shared/components/Sidebar'
 import { Metadata } from 'next'
 
 export const metadata : Metadata = { // CO de la pagina "solo funciona en los server compones"
