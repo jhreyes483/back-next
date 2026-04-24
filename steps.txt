@@ -1,3 +1,8 @@
+Bases 
+https://www.udemy.com/course/full-stack-nextjs-drizzle-orm-better-auth-ai-sdk-y-ts/learn/lecture/55007569#overview
+
+
+Crear proyecto
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 npx create-next-app@latest
 

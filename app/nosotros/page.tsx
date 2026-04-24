@@ -7,7 +7,7 @@ export const metadata : Metadata = { // CO de la pagina "solo funciona en los se
     title : 'Meeti - Inicio'
 }
 
-export default function Home(){
+export default function HomeNosotro(){
     return (
         <>
             <h1>Inicio</h1>

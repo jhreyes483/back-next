@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@utility bg-hero {
+  background-image: url('/hero.jpg');
+}
 
 :root {
   --background: #ffffff;

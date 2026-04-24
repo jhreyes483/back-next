@@ -1,7 +1,10 @@
 import React from 'react'
+import Hero from '../src/Hero'
 
-export default function AboutPage(){
+export default function Home(){
     return (
-      <div>AboutPage</div>
+      <>
+        <Hero/>
+      </>
     )
 }
