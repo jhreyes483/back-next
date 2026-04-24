@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
+import GuestNavigation from './GuestNavigation'
 
 
 export default function Header(){
@@ -14,7 +15,7 @@ export default function Header(){
         </div>
       </Link>
     </div>
-    {/* TODO: Navegación Aquí */}
+    <GuestNavigation/>
   </div>
 </header>
     )

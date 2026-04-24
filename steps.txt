@@ -6,3 +6,6 @@ Lanzar el server
 https://nextjs.org/telemetry
 url
 http://192.168.20.93:3000
+
+Se crean nuevos rutas layout
+http://192.168.20.93:3000/auth/login
