@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Hero() {
   return (
   <section className="bg-hero bg-cover bg-center h-150 flex justify-center items-center">
-    <div className="flex flex-col justify-center items-center max-w-2xl">
+    <div className="flex flex-col justify-center items-center max-w-7xl">
       <h1 className="text-3xl lg:text-4xl text-white uppercase font-black text-center">Encuentra Un Meeti o Crea una Comunidad para
         compartir lo que más te gusta</h1>
       <Link 

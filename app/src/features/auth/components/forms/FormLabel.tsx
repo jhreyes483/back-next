@@ -3,6 +3,9 @@ import { FormHTMLAttributes, HtmlHTMLAttributes, LabelHTMLAttributes } from "rea
 type Props = LabelHTMLAttributes<HTMLLabelElement>
 export default function FormLabel(props: Props){
     return (
-        <label {...props} className="block" >{props.children}</label>
+        
+            <label {...props} className="block" >{props.children}</label>
+   
+        
     )
 }

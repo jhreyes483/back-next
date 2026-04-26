@@ -17,6 +17,19 @@ export default function RegisterForm(){
                 type="email"
                 placeholder="Ingresa tu email"
             />
+            <FormLabel htmlFor="password">Contraseña</FormLabel>
+            <FormInput
+                id="password"
+                type="password"
+                placeholder="Password"
+                />
+
+            <FormLabel htmlFor="password_confirmation">Repetir Contraseña</FormLabel>
+            <FormInput
+                id="password"
+                type="password"
+                placeholder="Repite tu password"
+                />
         </FormGlobal>
     )
 }

@@ -33,6 +33,8 @@ export default function Heading({children, level = 1, className} : Props){
         6: 'text-sm',
     }
     return (
+        <div className="text-center">
         <Tag className={(clsx("font-black upercase", sizeMap[level], className))}>{children}</Tag>
+        </div>
     )
 }

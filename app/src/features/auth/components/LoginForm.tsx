@@ -3,7 +3,7 @@ import {FormGlobal,FormInput, FormLabel, FormSubmit} from "./forms"
 
 export default function LoginForm(){
     return (
-        <FormGlobal >
+        <FormGlobal>
             <FormLabel htmlFor="email">Email</FormLabel>
             <FormInput
                 type="email" 
