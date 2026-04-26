@@ -16,4 +16,11 @@ Se crean nuevos rutas layout
 http://192.168.20.93:3000/auth/login
 
 dependencias 
+libreria para mesclar clases de css con texto por parametro en un componente
 npm i clsx
+
+libreria para validar campos de imputs
+npm i react-hook-form
+npm i @hookform/resolvers
+npm i zod
+
