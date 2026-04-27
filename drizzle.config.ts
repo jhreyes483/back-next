@@ -9,7 +9,7 @@ import { defineConfig } from 'drizzle-kit'
 
 export default defineConfig({
     out: './drizzle',
-    schema: './src/db/schema', // aca deja las migraciones y squemas
+    schema: './src/db/schema/*', // aca deja las migraciones y squemas
     dialect: 'postgresql', // motor de db
     dbCredentials: {
         url: process.env.DATABASE_URL!

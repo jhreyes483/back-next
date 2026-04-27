@@ -27,6 +27,15 @@ npm i drizzle-orm@beta pg dotenv
 npm i -D drizzle-kit@beta  @types/pg tsx
 CONTEXTO
 En drizzle las bases de datos se definen por medio de los schemas y con drizzel-kit se enlaza con la db
+Migraciones
+- comandos
+generate, migrate, push, pull, export, check y studio
+ - sintaxis
+ npx drizzle-kit <comando>
+ 
+ generate: genera archivos de migracion a partir de tu esquema
+
+
 
 https://neon.com/pricing
 
