@@ -16,12 +16,13 @@ http://192.168.20.93:3000/auth/login
 dependencias 
 libreria para mesclar clases de css con texto por parametro en un componente
 npm i clsx
-
+---------------------------------------------------------------------
 libreria para validar campos de imputs
 npm i react-hook-form
 npm i @hookform/resolvers
 npm i zod
-
+----------------------------------------------------------------------
+https://neon.com/pricing (servidor gratuito de posgress)
 ORM (Drizzle) base de datos posgress
 npm i drizzle-orm@beta pg dotenv
 npm i -D drizzle-kit@beta  @types/pg tsx
@@ -41,9 +42,13 @@ generate, migrate, push, pull, export, check y studio
 pull: Lee la estructura actual de la base de datos y genera un esquema de Drizzle apartir de ella. Util si la base de datos ya existe y se quiere inciar con drizzel 
 export: Exporta el estado actual de la base de datos en un archivo SQL plano. Sirve para respaldos o para mover la estructura a otro entorno
 check: Revisa si tu esquema en TypeScript y tu base de datos estan sincrinizados.
+studio: abre una interfaz visual( Drizzle Studio) en el navegador para inspeccionar y gestionar la base de datos
+-------------------------------------------------------------------
 
+Autenticacion: BETTER AUTH
+Framework de autenticacion para TypeScript.
+Es usado en difrentes Frameworks como next.js, Nuxt, Astro, Remix, SevelteKit, SolidStart o TanStak Start o Exppress.
 
+Instalacion
 
-
-https://neon.com/pricing
-
+-------------------------------------------------------------------
