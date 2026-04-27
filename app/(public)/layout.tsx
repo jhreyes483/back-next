@@ -1,4 +1,4 @@
-import Header from "../src/shared/components/ui/Header";
+import Header from "../../src/features/shared/components/ui/Header";
 /*
 RootLayout → componente React
 children → TODO lo que se renderiza dentro (otras páginas/componentes)

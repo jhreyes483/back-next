@@ -1,5 +1,4 @@
-import React from 'react'
-import Hero from '../src/Hero'
+import Hero from '@/src/features/shared/components/ui/Hero'
 
 export default function Home(){
     return (

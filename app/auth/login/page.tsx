@@ -1,5 +1,6 @@
-import LoginForm from "@/app/src/features/auth/components/LoginForm";
-import Heading from "@/src/shared/components/typography/Heading";
+import Heading from "@/app/src/shared/components/typography/Heading";
+import LoginForm from "@/src/features/auth/components/LoginForm";
+
 import { Metadata } from "next";
 import Link from "next/link";
 

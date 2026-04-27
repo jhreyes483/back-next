@@ -1,6 +1,8 @@
-import RegisterForm from "@/app/src/features/auth/components/RegisterForm";
-import Heading from "@/src/shared/components/typography/Heading";
-import { generatePageTitle } from "@/src/shared/components/utils/metadata";
+import Heading from "@/app/src/shared/components/typography/Heading";
+import { generatePageTitle } from "@/app/src/shared/components/typography/utils/metadata";
+import RegisterForm from "@/src/features/auth/components/RegisterForm";
+
+
 import { Metadata } from "next";
 import Link from "next/link";
 

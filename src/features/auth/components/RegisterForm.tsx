@@ -1,14 +1,17 @@
 "use client"
 import { useForm } from "react-hook-form"
-import {FormError, FormGlobal,FormInput, FormLabel, FormSubmit} from "./forms"
+import {FormError, FormGlobal,FormInput, FormLabel, FormSubmit} from "../../../../app/src/shared/components/forms"
 import { zodResolver } from '@hookform/resolvers/zod'
-import { SignUpInput, SignUpSchema } from "@/app/src/shared/components/schemas/authSchema"
+import { SignUpInput, SignUpSchema } from "@/src/features/auth/schemas/authSchema"
+import { signUpAction } from "../actions/auth-actions"
+
 
 export default function RegisterForm(){
 
     /**
      * del hook extraemos register (permite conectar con los campos del formulario)
-     * en  resolver: zodResolver(SignUpSchema) se conecta el Schema creado en app\src\shared\components\schemas\authSchema.ts
+     * en  resolver: zodResolver(SignUpSchema) se conecta el 
+     * Schema creado en app\src\shared\components\schemas\authSchema.ts
      */
     const { register, handleSubmit, formState : { errors } } = useForm({
         resolver: zodResolver(SignUpSchema),
@@ -17,7 +20,8 @@ export default function RegisterForm(){
     console.log(errors)
 
 
-    const onSubmit = ( data : SignUpInput ) =>{
+    const onSubmit = async ( data : SignUpInput ) =>{
+        await signUpAction(data)
         console.log('Submit...')
     }
 

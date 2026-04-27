@@ -3,7 +3,7 @@
  */
 import z from 'zod'
 import { useForm } from 'react-hook-form'
-import { FormInput, FormLabel, FormSubmit } from '@/app/src/features/auth/components/forms'
+import { FormInput, FormLabel, FormSubmit } from '@/app/src/shared/components/forms'
 
 export const BaseAuthSchema = z.object({
     name:                 z.string().trim().min(1 /** hace que el usuario no ingrese algo vacio */,{error: 'El nombre es obligatorio'}),

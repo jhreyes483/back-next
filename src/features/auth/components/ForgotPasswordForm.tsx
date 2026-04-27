@@ -1,7 +1,7 @@
 
 "use client"
 
-import { FormGlobal, FormInput, FormLabel, FormSubmit } from "./forms"
+import { FormGlobal, FormInput, FormLabel, FormSubmit } from "../../../../app/src/shared/components/forms"
 
 export default function ForgotPasswordForm(){
     return (
