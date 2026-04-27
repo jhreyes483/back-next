@@ -2,7 +2,7 @@
 import { useForm } from "react-hook-form"
 import {FormError, FormGlobal,FormInput, FormLabel, FormSubmit} from "./forms"
 import { zodResolver } from '@hookform/resolvers/zod'
-import { SignUpSchema } from "@/app/src/shared/components/schemas/authSchema"
+import { SignUpInput, SignUpSchema } from "@/app/src/shared/components/schemas/authSchema"
 
 export default function RegisterForm(){
 
@@ -11,12 +11,13 @@ export default function RegisterForm(){
      * en  resolver: zodResolver(SignUpSchema) se conecta el Schema creado en app\src\shared\components\schemas\authSchema.ts
      */
     const { register, handleSubmit, formState : { errors } } = useForm({
-        resolver: zodResolver(SignUpSchema)
+        resolver: zodResolver(SignUpSchema),
+        mode: 'all'
     })
     console.log(errors)
 
 
-    const onSubmit = () =>{
+    const onSubmit = ( data : SignUpInput ) =>{
         console.log('Submit...')
     }
 
@@ -59,6 +60,7 @@ export default function RegisterForm(){
                 {...register('passwordConfirmation')}
                 />
                 {errors.passwordConfirmation && <FormError>{errors.passwordConfirmation.message}</FormError>}
+                
             <FormSubmit 
             value="registrarme"
             />

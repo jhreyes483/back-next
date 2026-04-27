@@ -7,7 +7,7 @@ export default function FormInput(props: Props){
     return (
         <input 
         {...props} 
-        className = {clsx("mt-1 space-y-2 p-5 rounded-xl w-full", className)}
+        className = {clsx("mt-1 space-y-2 p-3 rounded-xl w-full", className)}
         >
         </input>
     )
