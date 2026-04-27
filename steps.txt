@@ -50,5 +50,14 @@ Framework de autenticacion para TypeScript.
 Es usado en difrentes Frameworks como next.js, Nuxt, Astro, Remix, SevelteKit, SolidStart o TanStak Start o Exppress.
 
 Instalacion
+npm i better-auth --force
+
+Genera solo el schemas de better-auth
+npx @better-auth/cli@latest generate
+Se debe ralizar unos cambios espesificos
+https://www.udemy.com/course/full-stack-nextjs-drizzle-orm-better-auth-ai-sdk-y-ts/learn/lecture/55008327#overview
+despues generar la migracion
+npx drizzle-kit generate
+npx drizzle-kit migrate
 
 -------------------------------------------------------------------
