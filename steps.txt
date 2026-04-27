@@ -1,11 +1,9 @@
 Bases 
 https://www.udemy.com/course/full-stack-nextjs-drizzle-orm-better-auth-ai-sdk-y-ts/learn/lecture/55007569#overview
 
-
 Crear proyecto
 Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
 npx create-next-app@latest
-
 
 Lanzar el server 
 https://nextjs.org/telemetry
@@ -23,4 +21,12 @@ libreria para validar campos de imputs
 npm i react-hook-form
 npm i @hookform/resolvers
 npm i zod
+
+ORM (Drizzle) base de datos posgress
+npm i drizzle-orm@beta pg dotenv
+npm i -D drizzle-kit@beta  @types/pg tsx
+CONTEXTO
+En drizzle las bases de datos se definen por medio de los schemas y con drizzel-kit se enlaza con la db
+
+https://neon.com/pricing
 
