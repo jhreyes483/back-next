@@ -32,8 +32,16 @@ Migraciones
 generate, migrate, push, pull, export, check y studio
  - sintaxis
  npx drizzle-kit <comando>
- 
- generate: genera archivos de migracion a partir de tu esquema
+
+(
+    generate: genera archivos de migracion a partir de tu esquema
+    migrate: ejecuta las migraciones generadas en la base de datos, mantine un historial de migraciones que ya se aolicarion
+)
+
+pull: Lee la estructura actual de la base de datos y genera un esquema de Drizzle apartir de ella. Util si la base de datos ya existe y se quiere inciar con drizzel 
+export: Exporta el estado actual de la base de datos en un archivo SQL plano. Sirve para respaldos o para mover la estructura a otro entorno
+check: Revisa si tu esquema en TypeScript y tu base de datos estan sincrinizados.
+
 
 
 
