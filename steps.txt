@@ -60,4 +60,7 @@ despues generar la migracion
 npx drizzle-kit generate
 npx drizzle-kit migrate
 
+documentacion oficial de la libreria better-auth
+https://better-auth.com/docs/authentication/email-password
+
 -------------------------------------------------------------------

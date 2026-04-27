@@ -4,6 +4,7 @@ import {FormError, FormGlobal,FormInput, FormLabel, FormSubmit} from "../../../.
 import { zodResolver } from '@hookform/resolvers/zod'
 import { SignUpInput, SignUpSchema } from "@/src/features/auth/schemas/authSchema"
 import { signUpAction } from "../actions/auth-actions"
+import toast from "react-hot-toast"
 
 
 export default function RegisterForm(){
@@ -13,7 +14,7 @@ export default function RegisterForm(){
      * en  resolver: zodResolver(SignUpSchema) se conecta el 
      * Schema creado en app\src\shared\components\schemas\authSchema.ts
      */
-    const { register, handleSubmit, formState : { errors } } = useForm({
+    const { register, handleSubmit, formState : { errors }, reset } = useForm({
         resolver: zodResolver(SignUpSchema),
         mode: 'all'
     })
@@ -21,8 +22,19 @@ export default function RegisterForm(){
 
 
     const onSubmit = async ( data : SignUpInput ) =>{
-        await signUpAction(data)
+        const {error, success} = await signUpAction(data)
         console.log('Submit...')
+
+        /**
+         * Alert al usuario
+         */
+        if(error){
+            toast.error(error)
+        }
+        if(success){
+            toast.success(success)
+            reset()
+        }
     }
 
     return (

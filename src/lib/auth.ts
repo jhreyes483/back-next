@@ -8,6 +8,9 @@ export const auth = betterAuth({
         provider: 'pg',
         usePlural: true
     }),
-    // emailVerification:{},
+    // habilita la autenticacion por email de la libreria better-auth
+    emailAndPassword: {
+        enabled : true
+    },
     plugins: [nextCookies()]
 })

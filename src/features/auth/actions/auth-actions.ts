@@ -15,5 +15,6 @@ export async function signUpAction( input : SignUpInput) {
     }
     console.log(data.success)
 
-    await authService.register(data.data)
+    const response  = await authService.register(data.data)
+    return response
 }
