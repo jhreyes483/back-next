@@ -1,5 +1,15 @@
-class AuthRepository{
+import { SignUpInput } from "../schemas/authSchema"
 
+class AuthService {
+    async register(credentials : SignUpInput) {
+        const {name, email, password} = credentials
+
+        // Revisar si el usuario existe
+
+        // Validacion de negocio
+
+        // Manejar el registro
+    }
 }
 
-export const authRepository = new AuthRepository();
+export const authService = new AuthService()
